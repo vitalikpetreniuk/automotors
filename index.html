@@ -35,9 +35,12 @@
 						<span>automotors</span>
 					</a>
 				</div>
+				<button type="button" class="header-toggle">
+					<span></span>
+				</button>
 				<div class="header-menu">
 					<ul>
-						<li class="active">
+						<li>
 							<a href="#">Продукция</a>
 						</li>
 						<li>
@@ -47,7 +50,7 @@
 							<a href="#">Решения</a>
 						</li>
 						<li>
-							<a href="#">О компании</a>
+							<a href="#">О нас</a>
 						</li>
 						<li>
 							<a href="#">Новости</a>
@@ -166,7 +169,7 @@
 				<div class="products-panel">
 					<div class="slide-progress"></div>
 					<div class="products-nav">
-						<button class="products-nav-item active">
+						<a href="#" class="products-nav-item active">
 							<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="70px" height="60px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
 viewBox="0 0 407 347"
  xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -197,8 +200,8 @@ viewBox="0 0 407 347"
  </g>
 </svg>
                             <span>Двигатели</span>
-						</button>
-						<button class="products-nav-item">
+						</a>
+						<a href="#" class="products-nav-item">
 							<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="89px" height="68px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
 viewBox="0 0 5802 4444"
  xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -231,8 +234,8 @@ viewBox="0 0 5802 4444"
  </g>
 </svg>
 							<span>Трансмиссии</span>
-						</button>
-						<button class="products-nav-item">
+						</a>
+						<a href="#" class="products-nav-item">
 							<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="83px" height="63px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
 viewBox="0 0 191 145"
  xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -257,8 +260,8 @@ viewBox="0 0 191 145"
  </g>
 </svg>
 							<span>Когеренция</span>
-						</button>
-						<button class="products-nav-item">
+						</a>
+						<a href="#" class="products-nav-item">
 							<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="75px" height="74px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
 viewBox="0 0 256 311"
  xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -269,17 +272,10 @@ viewBox="0 0 256 311"
 </svg>
 
 							<span>Тормозные системы</span>
-						</button>
+						</a>
 					</div>
 					<a href="#" class="products-all">
 						<span>Все продукты</span>
-						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" xml:space="preserve"><path d="M508.875,248.458l-160-160c-3.063-3.042-7.615-3.969-11.625-2.313c-3.99,1.646-6.583,5.542-6.583,9.854v21.333
-			c0,2.833,1.125,5.542,3.125,7.542l109.792,109.792H10.667C4.771,234.667,0,239.437,0,245.333v21.333
-			c0,5.896,4.771,10.667,10.667,10.667h432.917L333.792,387.125c-2,2-3.125,4.708-3.125,7.542V416c0,4.313,2.594,8.208,6.583,9.854
-			c1.323,0.552,2.708,0.813,4.083,0.813c2.771,0,5.5-1.083,7.542-3.125l160-160C513.042,259.375,513.042,252.625,508.875,248.458z"
-			/>
-</svg>
 					</a>
 				</div>
 			</div>
@@ -294,25 +290,33 @@ viewBox="0 0 256 311"
 						<h2>Мы всегда заботимся<br> о своих клиентах</h2>
 					</div>
 					<div class="sub-title">Гарантированый сервис, оригинальные запчасти.</div>
-					<p>ДП «Автомоторс» является высококвалифицированным сервисным партнером<br> для производителей, которых он представляет.</p>
+					<p>ДП «Автомоторс» является высококвалифицированным сервисным<br> партнером для производителей, которых он представляет.</p>
 					<div class="care-list">
 						<div class="care-item care-item-left">
 							<a href="#">
-								<img src="img/care-img-1.jpg" alt="img">
-								<span>заказать ремонт</span>
+								<div class="care-item-img">
+									<img src="img/care-img-1.jpg" alt="img">
+								</div>
+								<span class="btn">
+									<span>заказать ремонт</span>
+								</span>
 							</a>
 						</div>
 						<div class="care-item care-item-right">
 							<a href="#">
-								<img src="img/care-img-2.jpg" alt="img">
-								<span>заказать запчасти</span>
+								<div class="care-item-img">
+									<img src="img/care-img-2.jpg" alt="img">
+								</div>
+								<span class="btn">
+									<span>заказать запчасти</span>
+								</span>
 							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="application">
+		<section class="application bg-change">
 			<div class="container">
 				<div class="text-back">Для ваших<br> задач</div>
 				<div class="section-in">
@@ -332,32 +336,52 @@ viewBox="0 0 256 311"
 						<div class="application-slider owl-carousel">
 							<div class="application-slider-item">
 								<a href="#">
-									<img src="img/app-1.jpg" alt="img">
-									<span>Сельское хозяйство</span>
+									<div class="application-slider-item-img">
+										<img src="img/app-1.jpg" alt="img">
+									</div>
+									<span class="btn">
+										<span>Сельское хозяйство</span>
+									</span>
 								</a>
 							</div>
 							<div class="application-slider-item">
 								<a href="#">
-									<img src="img/app-2.jpg" alt="img">
-									<span>Спецпредназначение</span>
+									<div class="application-slider-item-img">
+										<img src="img/app-2.jpg" alt="img">
+									</div>
+									<span class="btn">
+										<span>Спецпредназначениео</span>
+									</span>
 								</a>
 							</div>
 							<div class="application-slider-item">
 								<a href="#">
-									<img src="img/app-1.jpg" alt="img">
-									<span>Нефтегазовая отрасль</span>
+									<div class="application-slider-item-img">
+										<img src="img/scope-4.jpg" alt="img">
+									</div>
+									<span class="btn">
+										<span>Нефтегазовая отрасль</span>
+									</span>
 								</a>
 							</div>
 							<div class="application-slider-item">
 								<a href="#">
-									<img src="img/app-2.jpg" alt="img">
-									<span>Автобусы / Грузовики</span>
+									<div class="application-slider-item-img">
+										<img src="img/scope-3.jpg" alt="img">
+									</div>
+									<span class="btn">
+										<span>Автобусы / Грузовики</span>
+									</span>
 								</a>
 							</div>
 							<div class="application-slider-item">
 								<a href="#">
-									<img src="img/app-1.jpg" alt="img">
-									<span>Больше решений ...</span>
+									<div class="application-slider-item-img">
+										<img src="img/scope-5.jpg" alt="img">
+									</div>
+									<span class="btn">
+										<span>Больше решений ...</span>
+									</span>
 								</a>
 							</div>
 						</div>
@@ -365,7 +389,7 @@ viewBox="0 0 256 311"
 				</div>
 			</div>
 		</section>
-		<section class="company">
+		<section class="company bg-change">
 			<div class="container">
 				<div class="text-back">Компания</div>
 				<div class="section-in">
@@ -377,10 +401,10 @@ viewBox="0 0 256 311"
 						<div class="company-more">
 							<div class="title-block">
 								<div class="title-block-subtitle">О нас</div>
-								<div class="company-contact">Ответим на ваши вопросы: <a href="#">automotors@com.ua</a></div>
+								<div class="company-contact">Ответим на ваши вопросы: <a href="#">office@automot.kiev.ua</a></div>
 							</div>
 							<a href="#" class="btn">
-								<span>Больше информации</span>
+								<span>Больше о нас</span>
 							</a>
 						</div>
 					</div>
@@ -413,7 +437,7 @@ viewBox="0 0 256 311"
 						<div class="title-block-subtitle">Контакты</div>
 						<h2>Спросите что<br> вас интересует</h2>
 					</div>
-					<div class="sub-title">Мы готовы ответить на ваши вопросы</div>
+					<div class="sub-title">Мы готовы ответить на ваши вопросы.</div>
 					<div class="contact-block">
 						<div class="contact-img">
 							<img src="img/contact-img.jpg" alt="img">
@@ -450,49 +474,49 @@ viewBox="0 0 256 311"
 				</div>
 				<div class="partners-list row">
 					<div class="col-3">
-						<div class="partners-item">
+						<a href="#" class="partners-item">
 							<img src="img/brand-1.png" alt="logo">
-						</div>
+						</a>
 					</div>
 					<div class="col-3">
-						<div class="partners-item">
+						<a href="#" class="partners-item">
 							<img src="img/brand-2.png" alt="logo">
-						</div>
+						</a>
 					</div>
 					<div class="col-3">
-						<div class="partners-item">
+						<a href="#" class="partners-item">
 							<img src="img/brand-3.png" alt="logo">
-						</div>
+						</a>
 					</div>
 					<div class="col-3">
-						<div class="partners-item">
+						<a href="#" class="partners-item">
 							<img src="img/brand-4.png" alt="logo">
-						</div>
+						</a>
 					</div>
 					<div class="col-3">
-						<div class="partners-item">
+						<a href="#" class="partners-item">
 							<img src="img/brand-5.png" alt="logo">
-						</div>
+						</a>
 					</div>
 					<div class="col-3">
-						<div class="partners-item">
+						<a href="#" class="partners-item">
 							<img src="img/brand-6.png" alt="logo">
-						</div>
+						</a>
 					</div>
 					<div class="col-3">
-						<div class="partners-item">
+						<a href="#" class="partners-item">
 							<img src="img/brand-7.png" alt="logo">
-						</div>
+						</a>
 					</div>
 					<div class="col-3">
-						<div class="partners-item">
+						<a href="#" class="partners-item">
 							<img src="img/brand-8.png" alt="logo">
-						</div>
+						</a>
 					</div>
 					<div class="col-3">
-						<div class="partners-item">
+						<a href="#" class="partners-item">
 							<img src="img/brand-9.png" alt="logo">
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -629,7 +653,7 @@ viewBox="0 0 256 311"
 					<div class="footer-menu">
 						<ul>
 							<li>
-								<a href="#">О компании</a>
+								<a href="#">О нас</a>
 							</li>
 							<li>
 								<a href="#">Вакансии</a>
