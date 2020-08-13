@@ -141,10 +141,10 @@
                                 и военной техники используют продукцию Allison, в том числе DAF, Daimler Chrysler,
                                 IVECO, Scania, Volvo.</p>
                             <div class="product-page-links">
-                                <a href="#" class="btn">
+                                <a data-target="modal-order" href="#" class="btn modal-open">
                                     <span>Зробити замовлення</span>
                                 </a>
-                                <a href="#">Ціна за запитом</a>
+                                <a data-target="modal-price" href="#" class="modal-open">Ціна за запитом</a>
                             </div>
                         </div>
                     </div>
@@ -565,6 +565,8 @@
     </button>
 </div>
 <div class="back-shadow"></div>
+
+
 <div class="modal modal-call">
     <div class="modal-call-in">
         <button type="button" class="modal-close modal-call-close">
@@ -587,10 +589,89 @@
                     <input type="email" placeholder="Ваш Email">
                 </div>
                 <div class="form-block">
-                    <input type="text" placeholder="Вреся звонка">
+                    <input type="text" placeholder="Время звонка">
                 </div>
-                <button type="button" class="btn">
+                <button type="submit" class="btn">
                     <span>Перезвоните мне</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="modal-back"></div>
+</div>
+
+
+<div data-id="modal-order" class="modal">
+    <div class="modal-call-in">
+        <button type="button" class="modal-close modal-call-close">
+            <svg enable-background="new 0 0 413.348 413.348" height="25px" viewBox="0 0 413.348 413.348" width="25px"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="m413.348 24.354-24.354-24.354-182.32 182.32-182.32-182.32-24.354 24.354 182.32 182.32-182.32 182.32 24.354 24.354 182.32-182.32 182.32 182.32 24.354-24.354-182.32-182.32z"/>
+            </svg>
+            <span>Свернуть</span>
+        </button>
+        <div class="modal-call-title">Зробити замовлення</div>
+        <div class="modal-call-form">
+            <form action="">
+                <div class="form-block">
+                    <input type="text" placeholder="* Ваше имя" required>
+                </div>
+                <div class="form-block">
+                    <input type="tel" placeholder="* Телефон" required>
+                </div>
+                <div class="form-block">
+                    <input type="email" placeholder="Ваш Email">
+                </div>
+                <div class="form-chain">
+                    <div class="form-chain-label">Статус проекта *</div>
+                    <div class="form-check">
+                        <input type="radio" id="check1" name="radio1" required>
+                        <label for="check1">попереднє планування</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" id="check2" name="radio1" required>
+                        <label for="check2">тендер на закупівлю обладнання</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn">
+                    <span>Відправити</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="modal-back"></div>
+</div>
+
+
+<div data-id="modal-price" class="modal">
+    <div class="modal-call-in">
+        <button type="button" class="modal-close modal-call-close">
+            <svg enable-background="new 0 0 413.348 413.348" height="25px" viewBox="0 0 413.348 413.348" width="25px"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="m413.348 24.354-24.354-24.354-182.32 182.32-182.32-182.32-24.354 24.354 182.32 182.32-182.32 182.32 24.354 24.354 182.32-182.32 182.32 182.32 24.354-24.354-182.32-182.32z"/>
+            </svg>
+            <span>Свернуть</span>
+        </button>
+        <div class="modal-call-title">Зробити замовлення</div>
+        <div class="modal-call-form">
+            <form action="">
+                <div class="form-block">
+                    <input type="text" placeholder="* Ваше имя" required>
+                </div>
+                <div class="form-block">
+                    <input type="tel" placeholder="* Телефон" required>
+                </div>
+                <div class="form-block">
+                    <input type="email" placeholder="Ваш Email">
+                </div>
+                <div class="form-block">
+                    <input type="text" placeholder="* Кількість (у літрах)" required>
+                </div>
+                <div class="form-block">
+                    <input type="text" placeholder="* Ємність" required>
+                </div>
+                <button type="ігиьше" class="btn">
+                    <span>Відправити</span>
                 </button>
             </form>
         </div>
